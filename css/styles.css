@@ -4,6 +4,11 @@
   src: url(../fonts/emulogic.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: mariomaker;
+  src: url(../fonts/MarioMaker.ttf) format("truetype");
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -25,14 +30,22 @@ body{
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   width: 80%;
 }
 
 .mariocard{
-  background-color: brown;
-  border: solid 0.2rem white;
+  background-color: #22b573;
+  border: solid 0.3rem white;
+  border-radius: 2rem;
+  box-shadow: 10px 5px 5px #7373f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: auto;
   margin: 1rem;
+  padding: 2rem;
   width: 30rem;
 }
 
@@ -41,25 +54,29 @@ body{
 }
 
 .mariocard__coverimage{
+  border-radius: 2rem;
   width: 100%
 }
 
 .mariocard__title{
   color: white;
-  font-family: sans-serif;
-  text-align: center;
+  font-family: mariomaker;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
 .mariocard__actions{
-  background-color: yellow;
+  background-color: red;
+  border-radius: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 1rem;
   width: 100%;
 }
 
 .mariocardactions__like{
-  background-color: green;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -84,12 +101,56 @@ body{
 }
 
 .mariocardactions__button{
-  display: flex;
   align-items: center;
-  border: solid 0.2rem black;
+  background-color: white;
+  color: red;
+  display: flex;
+  border-radius: 1rem;
   font-family: emulogic;
   justify-content: center;
   padding: 0.3rem;
   text-decoration: none;
   width: 10rem;
+}
+
+.super_footer{
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20rem;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+.super_footer p{
+  color: white;
+  font-family: emulogic;
+  text-align: center;
+}
+
+.cloud{
+  position: absolute;
+  z-index: -1;
+}
+
+.cloud1{
+  right: 3rem;
+  top: 3rem;
+}
+
+.cloud2{
+  left: 5rem;
+  top: 10rem;
+}
+
+.cloud3{
+  right: 10rem;
+  top: 30rem;
+}
+
+.super_floor{
+  background-size: cover;
+  bottom: 0rem;
+  width: 100%
 }
