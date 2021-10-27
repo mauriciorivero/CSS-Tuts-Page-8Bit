@@ -65,12 +65,20 @@ body{
   align-items: center;
 }
 
+.mariocardactionslike__img{
+  display: flex;
+}
+
 .mariocardactions__img{
-  height: 5rem;
-  width: 5rem;
+  align-items: center;
+  height: 4rem;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 4rem;
 }
 
 .mariocardactions__p{
+  align-items: center;
   color: white;
   font-family: emulogic;
 }
