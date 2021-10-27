@@ -1,0 +1,87 @@
+
+@font-face {
+  font-family: emulogic;
+  src: url(../fonts/emulogic.ttf) format("truetype");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  background-color: #9290FF;
+}
+
+.maincontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.mariocard{
+  background-color: brown;
+  border: solid 0.2rem white;
+  height: auto;
+  margin: 1rem;
+  width: 30rem;
+}
+
+.mariocard__cover{
+  width: 100%
+}
+
+.mariocard__coverimage{
+  width: 100%
+}
+
+.mariocard__title{
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.mariocard__actions{
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mariocardactions__like{
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mariocardactions__img{
+  height: 5rem;
+  width: 5rem;
+}
+
+.mariocardactions__p{
+  color: white;
+  font-family: emulogic;
+}
+
+.mariocardactions__button{
+  display: flex;
+  align-items: center;
+  border: solid 0.2rem black;
+  font-family: emulogic;
+  justify-content: center;
+  padding: 0.3rem;
+  text-decoration: none;
+  width: 10rem;
+}
