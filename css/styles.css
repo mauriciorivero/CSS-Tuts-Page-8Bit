@@ -88,6 +88,7 @@ body{
 
 .mariocardactions__img{
   align-items: center;
+  cursor: pointer;
   height: 4rem;
   justify-content: center;
   padding: 0.5rem;
