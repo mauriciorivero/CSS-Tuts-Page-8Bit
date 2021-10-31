@@ -67,6 +67,7 @@ body{
 }
 
 .mariocard__coverimage{
+  border: solid 0.4rem #ffffff;
   border-radius: 1.3rem;
   width: 100%
 }
