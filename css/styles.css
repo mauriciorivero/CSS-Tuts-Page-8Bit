@@ -30,13 +30,63 @@ body{
   background-image: url(../img/pattern-logos-characters.png);
 }
 
+.subheader__container{
+  align-items: center;
+  background-image: repeating-linear-gradient(-45deg,#302f2f,#302f2f 6px,#2a2929 0,#2a2929 12px);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 80%;
+}
+
+.subheadercontainer__title{
+  color: white;
+  font-family: mariomaker;
+  font-size: 30px;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container__items{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.container__item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container__item--image{
+  height: 4rem;
+  width: 4rem;
+}
+
+.container__item--text{
+  color: white;
+  font-family: mariomaker;
+  font-weight: normal;
+  margin-left: 1rem;
+  margin-right: 5rem;
+}
+
 .maincontainer{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 10rem;
   width: 80%;
 }
@@ -55,11 +105,21 @@ body{
 }
 
 .mariocard__title{
+  display: flex;
+  justify-content: space-between;
+}
+
+.mariocard__title--text{
   color: white;
   font-family: mariomaker;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: left;
+}
+
+.mariocard__title--difficulty{
+  height: 4rem;
+  width: 4rem
 }
 
 .mariocard__cover{
