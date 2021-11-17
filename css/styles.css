@@ -14,6 +14,11 @@
   src: url(../fonts/FOT-PopJoyStd-B.otf) format("opentype");
 }
 
+@font-face {
+  font-family: supermario;
+  src: url(../fonts/SuperMario.ttf) format("truetype");
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -28,6 +33,36 @@ body{
   font-size: 1.6rem;
   background-color: #9290FF;
   background-image: url(../img/pattern-logos-characters.png);
+}
+
+.titlepage{
+  align-items: center;
+  background-color: brown;
+  border: solid 1rem black;
+  border-radius: 1rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto 2rem auto;
+  padding: 2rem;
+  text-shadow: 0rem 1rem 0rem #000;
+  width: 90rem;
+  -webkit-text-stroke-width: 0.3rem;
+  -webkit-text-stroke-color: black;
+}
+
+
+.titlepage__title1{
+  font-family: supermario;
+  font-size: 10rem;
+  letter-spacing: -0.5rem;
+  line-height: 5rem;
+  text-align: center;
+}
+
+.titlepage__title3{
+  font-family: supermario;
+  font-size: 6rem;
 }
 
 .subheader__container{
