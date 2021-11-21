@@ -1,3 +1,34 @@
+const colors = ["#009CDA","#FCD000","#E71E07","#42B132","#FCD000","#E71E07","#42B132","#FCD000"];
+
+function textoDinamico(){
+    const str = '#RetosPlatziCSS & Guías paso a paso';
+    const arrayTitulo1 = Array.from(str);
+    console.log(arrayTitulo1); 
+    var textoTituloFinal = "";
+    for(var i=0;i<arrayTitulo1.length;i++){
+        console.log("el valor de la posición es: "+arrayTitulo1[i]);
+        letra = arrayTitulo1[i];
+        textoTituloFinal+="<span style='color: "+colorMario(colors)+"'>"+letra+"</span>";
+    }
+    return textoTituloFinal;
+}
+
+let counter=0;
+function colorMario(color){    
+    let respond = color[counter];
+    counter+=1;
+    if(counter === color.length){
+        counter = 0;
+    }
+    return respond;
+}
+
+/*  A tener en cuenta */
+//https://sebhastian.com/javascript-echo/
+//https://www.codegrepper.com/code-examples/javascript/createelement+with+id
+
+document.getElementById("titulo_ppal").innerHTML=textoDinamico();
+
 var count_tutorial1 = 0;
 var count_tutorial2 = 0;
 var count_tutorial3 = 0;

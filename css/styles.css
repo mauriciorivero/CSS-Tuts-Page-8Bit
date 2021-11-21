@@ -44,13 +44,14 @@ body{
   display: flex;
   flex-direction: column;
   margin: 2rem auto 2rem auto;
+  min-width: 30px;
+  max-width: 90rem;
   padding: 2rem;
   text-shadow: 0rem 1rem 0rem #000;
-  width: 90rem;
   -webkit-text-stroke-width: 0.3rem;
   -webkit-text-stroke-color: black;
+  width: 100%;
 }
-
 
 .titlepage__title1{
   font-family: supermario;
@@ -58,6 +59,7 @@ body{
   letter-spacing: -0.5rem;
   line-height: 5rem;
   text-align: center;
+  width: 100%;
 }
 
 .titlepage__title3{
