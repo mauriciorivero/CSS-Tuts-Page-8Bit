@@ -1,3 +1,8 @@
+/*
+ este código se pudo terminar gracias a la ayuda de @Javiersalcedoj
+ Me colaboro con la funcion colorMario y con definir la lógica de textoDinámico
+*/
+
 const colors = ["#009CDA","#FCD000","#E71E07","#42B132","#FCD000","#E71E07","#42B132","#FCD000"];
 
 function textoDinamico(){
