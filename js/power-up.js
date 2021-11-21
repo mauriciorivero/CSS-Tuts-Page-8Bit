@@ -1,7 +1,7 @@
 const colors = ["#009CDA","#FCD000","#E71E07","#42B132","#FCD000","#E71E07","#42B132","#FCD000"];
 
 function textoDinamico(){
-    const str = '#RetosPlatziCSS & Guías paso a paso';
+    const str = 'Retos Platzi CSS & Guías paso a paso';
     const arrayTitulo1 = Array.from(str);
     console.log(arrayTitulo1); 
     var textoTituloFinal = "";

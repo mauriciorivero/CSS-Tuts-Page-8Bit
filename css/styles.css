@@ -43,6 +43,7 @@ body{
   color: #ffffff;
   display: flex;
   flex-direction: column;
+  height: auto;
   margin: 2rem auto 2rem auto;
   min-width: 30px;
   max-width: 90rem;
@@ -60,6 +61,7 @@ body{
   line-height: 5rem;
   text-align: center;
   width: 100%;
+  word-wrap: break-word;
 }
 
 .titlepage__title3{
