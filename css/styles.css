@@ -37,8 +37,8 @@ body{
 
 .titlepage{
   align-items: center;
-  background-color: brown;
-  border: solid 1rem black;
+  background-image: url(../img/pattern-characters-red.png);
+  border-bottom: solid 1rem brown;
   border-radius: 1rem;
   color: #ffffff;
   display: flex;
@@ -51,7 +51,7 @@ body{
   text-shadow: 0rem 1rem 0rem #000;
   -webkit-text-stroke-width: 0.3rem;
   -webkit-text-stroke-color: black;
-  width: 100%;
+  width: 80%;
 }
 
 .titlepage__title1{
@@ -67,6 +67,9 @@ body{
 .titlepage__title3{
   font-family: supermario;
   font-size: 6rem;
+  max-width: 80%;
+  text-align: center;
+  word-wrap: break-word;
 }
 
 .subheader__container{
