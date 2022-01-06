@@ -27,6 +27,7 @@
 
 html{
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -238,15 +239,92 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 20rem;
+  height: auto;
   padding-bottom: 2rem;
   width: 100%;
 }
 
 .super_footer p{
   color: white;
-  font-family: emulogic;
   text-align: center;
+}
+
+.containersubscribe{
+  align-items: center;
+  border: solid 0.4rem white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 80%;
+  min-width: 50%;
+  padding: 2rem;
+}
+
+.containersubscribe__p{
+  font-family: papermario;
+  font-size: 2rem;
+  width: 90%;
+}
+
+.containersubscribe__form{
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:space-between;
+  padding: 1rem;
+}
+
+.containersubscribe__form div{
+  display: flex;
+  flex-direction: row;
+}
+
+.containersubscribe__formimg{
+  height: auto;
+  width: 2.6rem;
+}
+
+.containersubscribe__forminput{
+  background-color: white;
+  border: 0;
+  color: red;
+  font-family: papermario;
+  height: 3rem;
+  text-align: center;
+}
+
+.containersubscribe__forminput:focus{
+  border: solid 0.1rem white;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.containersubscribe__formbutton{
+  background-color: white;
+  border: 0;
+  border-radius: 0.3rem;
+  color: red;
+  cursor: pointer;
+  font-family: emulogic;
+  padding: 1rem;
+}
+
+.containersubscribe__formbutton:hover{
+  background-color: red;
+  border: 0;
+  border-radius: 0.3rem;
+  color: white;
+  cursor: pointer;
+  font-family: emulogic;
+  padding: 1rem;
 }
 
 .cloud{

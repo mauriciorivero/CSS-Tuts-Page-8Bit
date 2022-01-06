@@ -28,10 +28,6 @@ function colorMario(color){
     return respond;
 }
 
-/*  A tener en cuenta */
-//https://sebhastian.com/javascript-echo/
-//https://www.codegrepper.com/code-examples/javascript/createelement+with+id
-
 document.getElementById("titulo_ppal").innerHTML=textoDinamico();
 
 var count_tutorial1 = 0;
