@@ -7,11 +7,15 @@ const colors = ["#009CDA","#FCD000","#E71E07","#42B132","#FCD000","#E71E07","#42
 
 const cursorDot = document.querySelector("[data-cursor-dot]");
 const cursorOutline = document.querySelector("[data-cursor-outline]");
+const cursorText = document.querySelector("[data-cursor-text]");
+const likeTut1 = document.getElementById("like_tut1");
 
 window.addEventListener("mousemove", function(e){
+
     const posX = e.clientX;
     const posY = e.clientY;
 
+    cursorText.innerHTML = "X="+e.clientX+"Y="+e.clientY;
     cursorDot.style.left = `${posX}px`;
     cursorDot.style.top = `${posY}px`;
 
@@ -26,6 +30,11 @@ window.addEventListener("mousemove", function(e){
         fill: "forwards"
     });
 });
+
+likeTut1.addEventListener("mouseover", function(e){
+    cursorText.innerHTML = "Hover";
+});
+
 
 function textoDinamico(){
     const str = 'Retos Platzi CSS & Guías paso a paso';
