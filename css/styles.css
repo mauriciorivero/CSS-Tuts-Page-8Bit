@@ -36,6 +36,34 @@ body{
   background-image: url(../img/pattern-logos-characters.png);
 }
 
+/* Ocultar el cursor por defecto */
+body {
+  cursor: none;
+}
+
+.cursor-dot{
+  background-color: red;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.cursor-outline{
+  border: 0.2rem solid blue;
+  height: 3rem;
+  width: 3rem;
+}
+
+.cursor-dot,
+.cursor-outline{
+  border-radius: 50%;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
 .titlepage{
   align-items: center;
   background-image: url(../img/pattern-characters-red.png);
